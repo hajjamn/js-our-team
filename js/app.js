@@ -80,3 +80,23 @@ for (let i = 0; i < team.length; i++) {
   const currentMember = team[i];
   printMemberInfo(currentMember);
 }
+
+//Definisco l'elemento html dove inserire le stringhe di testo
+const cardContainerElement = document.querySelector('.cards-row')
+
+//Creo la funzione per aggiungere una stringa con le informazioni
+function generateMemberCard(member) {
+  const teamMemberCardElement = document.createElement('div');
+  teamMemberCardElement.innerHTML = `
+    <p>${member.nome}</p>
+    <p>${member.ruolo}</p>
+    <p>${member.foto}</p>
+    `
+  cardContainerElement.append(teamMemberCardElement)
+}
+
+  //Invoco ciclicamente la funzione per ogni elemento dell'array
+  for (let i = 0; i < team.length; i++) {
+    const currentMember = team[i];
+    generateMemberCard(currentMember);
+  }
