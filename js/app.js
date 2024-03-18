@@ -64,9 +64,15 @@ const barbaraRamos = {
   "foto" : `barbara-ramos-graphic-designer.jpg`
 };
 
+const ashenMoshi = {
+  'nome' : 'Ashen Moshi',
+  'ruolo' : 'Ballerino',
+  'foto' : 'ashen-moshi.gif'
+};
+
 //Creo l'array di oggetti
 
-const team = [wayneBarnett, angelaCaroll, walterGordon, angelaLopez, scottEstrada, barbaraRamos];
+const team = [wayneBarnett, angelaCaroll, walterGordon, angelaLopez, scottEstrada, barbaraRamos, ashenMoshi];
 
 //Stampo in console le informazioni per ogni membro del team
   //Creo la funzione per stampare le informazioni
