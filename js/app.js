@@ -87,10 +87,12 @@ const cardContainerElement = document.querySelector('.cards-row')
 //Creo la funzione per aggiungere una stringa con le informazioni
 function generateMemberCard(member) {
   const teamMemberCardElement = document.createElement('div');
+  teamMemberCardElement.className = 'col-4 p-3'
   teamMemberCardElement.innerHTML = `
-    <p>${member.nome}</p>
-    <p>${member.ruolo}</p>
-    <img src="./img/${member.foto}"></img>
+    <div class= "card text-center text-secondary">
+      <img src="./img/${member.foto}" class= "pb-3"></img>
+      <h5>${member.nome}</h5>
+      <p>${member.ruolo}</p>
     `
   cardContainerElement.append(teamMemberCardElement)
 }
