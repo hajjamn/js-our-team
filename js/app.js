@@ -90,7 +90,7 @@ function generateMemberCard(member) {
   teamMemberCardElement.innerHTML = `
     <p>${member.nome}</p>
     <p>${member.ruolo}</p>
-    <p>${member.foto}</p>
+    <img src="./img/${member.foto}"></img>
     `
   cardContainerElement.append(teamMemberCardElement)
 }
