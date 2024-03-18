@@ -32,38 +32,51 @@ const wayneBarnett = {
   "nome": `Wayne Barnett`,
   "ruolo" : `Founder & CEO`,
   "foto" : `wayne-barnett-founder-ceo.jpg`
-}
+};
 
 const angelaCaroll = {
   "nome" : `Angela Caroll`,
   "ruolo" : `Chief Editor`,
   "foto" : `angela-caroll-chief-editor.jpg`
-}
+};
 
 const walterGordon = {
   "nome" : `Walter Gordon`,
   "ruolo" : `Office Manager`,
   "foto" : `walter-gordon-office-manager.jpg`
-}
+};
 
 const angelaLopez = {
   "nome" : `Angela Lopez`,
   "ruolo" : `Social Media Manager`,
   "foto" : `angela-lopez-social-media-manager.jpg`
-}
+};
 
 const scottEstrada = {
   "nome" : `Scott Estrada`,
   "ruolo" : `Developer`,
   "foto" : `scott-estrada-developer.jpg`
-}
+};
 
 const barbaraRamos = {
   "nome" : `Barbara Ramos`,
   "ruolo" : `Graphic Designer`,
   "foto" : `barbara-ramos-graphic-designer.jpg`
-}
+};
 
 //Creo l'array di oggetti
 
-const team = [wayneBarnett, angelaCaroll, walterGordon, angelaLopez, scottEstrada, barbaraRamos]
+const team = [wayneBarnett, angelaCaroll, walterGordon, angelaLopez, scottEstrada, barbaraRamos];
+
+//Stampo in console le informazioni per ogni membro del team
+  //Creo la funzione per stampare le informazioni
+
+function printMemberInfo(member) {
+  console.log(member.nome, member.ruolo, member.foto);
+};
+
+  //Invoco ciclicamente la funzione per ogni elemento dell'array
+for (let i = 0; i < team.length; i++) {
+  const currentMember = team[i];
+  printMemberInfo(currentMember);
+}
