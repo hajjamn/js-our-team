@@ -63,3 +63,7 @@ const barbaraRamos = {
   "ruolo" : `Graphic Designer`,
   "foto" : `barbara-ramos-graphic-designer.jpg`
 }
+
+//Creo l'array di oggetti
+
+const team = [wayneBarnett, angelaCaroll, walterGordon, angelaLopez, scottEstrada, barbaraRamos]
